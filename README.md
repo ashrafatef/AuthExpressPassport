@@ -17,3 +17,7 @@ How Use this module :
 - After clone the repo run ' npm install '
 - add your .env file in the project root folder 
 - run ' npm start ' to start your server 
+
+Upcoming updates :
+==================
+- Add foreget password wtih email 
