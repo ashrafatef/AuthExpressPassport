@@ -63,14 +63,13 @@ module.exports = {
             }
 
             if(passportUser) {
+
                 let token = jwt.sign({id: passportUser.id},
                     jwtConfig.secret,
                     { 
                         expiresIn: '15m' // expires in 24 hours
                     }
                 );
-                // const user = passportUser;
-                // user.token = passportUser.generateJWT();
 
                 return res.status(200).json({ 
                     message : " login Suucessfully",
